@@ -1,3 +1,9 @@
+options:
+  # Option 1: Use regional user-owned bucket (recommended)
+  logging: CLOUD_LOGGING_ONLY
+  # Option 2: Alternatively specify a logs bucket
+  # logsBucket: 'gs://your-log-bucket-name'
+
 steps:
   # Build with Maven
   - name: 'gcr.io/cloud-builders/mvn'
@@ -18,5 +24,6 @@ steps:
            '--platform', 'managed',
            '--region', 'us-central1',
            '--allow-unauthenticated']
+
 images:
   - 'gcr.io/$PROJECT_ID/springboot-cloudrun'
