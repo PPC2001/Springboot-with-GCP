@@ -1,5 +1,5 @@
 CI/CD Pipeline Summary: Spring Boot on Google Cloud Run
------------
+-------------
 
 1. Objective
 Set up a fully automated CI/CD pipeline for a Spring Boot (Java 17) application deployed on Google Cloud Run, triggered on every Git push.
